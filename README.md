@@ -16,9 +16,9 @@ Snizzors solves this by:
 * **Supporting transparent UIKit views:** Integrate transparent `UIView`s and `UIViewController`s seamlessly into your Compose Multiplatform app.
 * **Simplifying complex UIs:** Achieve sophisticated layering and visual effects that were previously difficult or impossible.
 
-Stock Compose             |  Snizzors
+Snizzors             |  Stock Compose
 :-------------------------:|:-------------------------:
-![](images/stock_compose_hierarcy.png)  |  ![](images/snizzors_hierarcy.png)
+![](images/snizzors_hierarcy.png)  |  ![](images/stock_compose_hierarcy.png)
 
 ## Getting Started
 
