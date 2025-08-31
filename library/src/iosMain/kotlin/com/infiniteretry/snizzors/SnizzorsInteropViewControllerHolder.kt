@@ -19,6 +19,7 @@
 
 package com.infiniteretry.snizzors
 
+import androidx.compose.runtime.CompositeKeyHashCode
 import androidx.compose.ui.viewinterop.InteropContainer
 import androidx.compose.ui.viewinterop.InteropViewGroup
 import androidx.compose.ui.viewinterop.UIKitInteropProperties
@@ -36,7 +37,7 @@ internal class SnizzorsInteropViewControllerHolder<T : UIViewController>(
   interopContainer: InteropContainer,
   private val parentViewController: UIViewController,
   properties: UIKitInteropProperties,
-  compositeKeyHashCode: Int,
+  compositeKeyHashCode: CompositeKeyHashCode,
 ) : SnizzorsInteropElementHolder<T>(
   factory,
   interopContainer,

@@ -19,6 +19,7 @@
 
 package com.infiniteretry.snizzors
 
+import androidx.compose.runtime.CompositeKeyHashCode
 import androidx.compose.ui.ExperimentalComposeUiApi
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.input.pointer.PointerEvent
@@ -50,7 +51,7 @@ internal abstract class SnizzorsInteropElementHolder<T : InteropView>(
   interopContainer: InteropContainer,
   private val interopWrappingView: InteropWrappingView,
   properties: UIKitInteropProperties,
-  compositeKeyHashCode : Int
+  compositeKeyHashCode : CompositeKeyHashCode,
 ) : TypedInteropViewHolder<T>(
   factory,
   interopContainer,
@@ -69,7 +70,7 @@ internal abstract class SnizzorsInteropElementHolder<T : InteropView>(
     factory: () -> T,
     interopContainer: InteropContainer,
     properties: UIKitInteropProperties,
-    compositeKeyHashCode: Int,
+    compositeKeyHashCode: CompositeKeyHashCode,
   ) : this(
     factory = factory,
     interopContainer = interopContainer,
