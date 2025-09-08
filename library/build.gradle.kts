@@ -7,7 +7,7 @@ plugins {
 }
 
 group = "com.infiniteretry.snizzors"
-version = "1.0.0-cmp1.9"
+version = "1.0.0-cmp1.10-alpha01"
 
 kotlin {
   listOf(

@@ -41,13 +41,13 @@ internal class SnizzorsInteropViewHolder<T : UIView>(
 ) {
   init {
     // Group will be placed to hierarchy in [InteropContainer.placeInteropView]
-    group.addSubview(typedInteropView)
+    group.addSubview(interopView)
   }
 
   override var userComponentCGRect: CValue<CGRect>
-    get() = typedInteropView.frame
+    get() = interopView.frame
     set(value) {
-      typedInteropView.setFrame(value)
+      interopView.setFrame(value)
     }
 
   override fun insertInteropView(root: InteropViewGroup, index: Int) {
